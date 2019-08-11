@@ -1,2 +1,2 @@
 # todo
-Simple TODO list
+Simple TODO list using jquery
