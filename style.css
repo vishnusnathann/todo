@@ -1,7 +1,17 @@
 
 li {
-	list-style-type: none;
+	 list-style-type: none; 
 }
 .strike {
 	text-decoration: line-through;
+}
+#thelist{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding:0;
+}
+.totdod-container{
+	display: flex;
+	justify-content: center;
 }

@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>Todo</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
@@ -13,12 +14,15 @@
 		<div class="row">
 			<div class="col-xs-12 col-md-4 col-md-offset-4 text-center">
 				<h1 class="bg-primary text-center">To Do List</h1>
-				<input type="text" id="ipget">
+				<input type="text" id="ipget" required>
 				<button type="button" class="btn btn-primary" id="add">Add</button>
 				<label id="err"></label>
 			</div>
-			<div class=" col-xs-12 col-md-4 col-md-offset-4 col-xs-offset-4">
-				<ul></ul>
+			<div class=" col-xs-12 col-md-4 col-md-offset-4 totdod-container">
+				
+					<ul id="thelist"></ul>
+				
+				
 			</div>
 		</div>
 		<div class="row">
@@ -26,11 +30,6 @@
 				<button type="button" id="all" class="btn btn-primary">All</button>
 				<button type="button" id="completed" class="btn btn-success">Completed</button>
 				<button type="button" id="active" class="btn btn-warning">Active</button>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-xs-12 col-md-4 col-md-offset-4 text-center">
-				<p >Active :<span id="count"></span></p>
 			</div>
 		</div>
 	</div>
